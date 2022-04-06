@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+#container {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 300px;
+  border: 5px solid green;
+}
+header,
+footer {
+  width: 100%;
+  height: 14.2857%;
+  border: 2px solid green;
+  clear: both;
+}
+section {
+  width: 33.3%;
+  height: 28.5714%;
+  float: left;
+  border: 2px solid green;
+}
+.big {
+  width: 50%;
+  height: 42.8571%;
+  float: left;
+  border: 2px solid green;
+}

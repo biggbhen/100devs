@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  color: #304659;
+}
+.container {
+  overflow: auto;
+}
+
+header {
+  background-color: #f5f9fc;
+
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+}
+header nav > * {
+  float: left;
+  width: 30%;
+  /* border: 1px solid black; */
+}
+.ham {
+  display: none;
+}
+header nav ul {
+  width: 40%;
+}
+header nav ul a {
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+header {
+  clear: both;
+  overflow: auto;
+  /* border: 2px solid yellow; */
+  padding-left: 1rem;
+}
+.source {
+  overflow: auto;
+  background-color: #f5f9fc;
+}
+header nav .button {
+  display: inline-block;
+  text-align: right;
+}
+nav li {
+  float: left;
+  width: 25%;
+}
+header nav li,
+button {
+  padding: 5px 0;
+}
+
+.mobile-review,
+.about-source {
+  float: left;
+  /* border: 1px solid red; */
+  width: 40%;
+}
+.about-source {
+  padding: 2rem 2rem 3rem 3rem;
+}
+.about-source input {
+  width: clamp(180px, 2vw, 300px);
+  padding: 5px 0;
+}
+.p {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 5px 10px;
+  color: white;
+  background-color: #304659;
+}
+.mobile-review {
+  width: 60%;
+  text-align: right;
+}
+.mobile-review > figure {
+  width: 80%;
+  height: 21.875rem;
+  /* border: 1px solid green; */
+  display: inline-block;
+}
+.mobile-review > figure > img {
+  width: 100%;
+  height: 100%;
+}
+.info {
+  /* border: 1px solid green; */
+  clear: both;
+}
+.info section {
+  float: left;
+  width: 25%;
+  /* border: 1px solid magenta; */
+  padding: clamp(20px, 3vw, 30px);
+}
+.info section h2 {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+}
+.info section p {
+  margin-bottom: 0.5rem;
+}
+.info section a {
+  font-weight: 600;
+}
+h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 1rem;
+  line-height: clamp(2rem, 3vw, 3rem);
+}
+p {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.4rem;
+}
+.info .f-one {
+  padding-left: 3rem;
+}
+.bottom {
+  clear: both;
+  padding-left: 3rem;
+}
+.bottom > div {
+  width: 40%;
+}
+.bottom h3 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+.bottom div + div {
+  width: 96%;
+  margin-top: 1rem;
+  background-color: #e1e9f0;
+  height: 2rem;
+}
+.icons {
+  width: 30px;
+}
+@media (max-width: 845px) {
+  .about-source {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .info .f-one {
+    padding-left: 1rem;
+  }
+  .bottom {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 632px) {
+  header > * {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .about-source,
+  .mobile-review {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  .about-source button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .mobile-review > figure {
+    width: 100%;
+  }
+  .about-source input {
+    width: 100%;
+    padding: 10px;
+  }
+  .about-source .p {
+    font-size: 1.5rem;
+  }
+  .info > section {
+    float: left;
+    width: 50%;
+  }
+  .bottom > div {
+    width: 100%;
+  }
+  .bottom h3 {
+    margin-bottom: 1rem;
+  }
+  .bottom p {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,44 @@
+
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1, h2{
+  text-align: center;
+}
+
+.chair{
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+ul{
+ display: flex;
+ width: 450px;
+  /* border: 1px solid #000000; */
+  margin: 31vh auto;
+  list-style: none;
+}
+
+li{
+  width: 150px;
+  height: 150px;
+
+}
+div{
+  height:100% ;
+}
+li div img{
+  height: 100%;
+  width: 100%;
+}
+
+

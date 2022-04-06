@@ -1,0 +1,41 @@
+body{
+ color: white;
+}
+section{
+width: 600px;
+outline: 5px solid RGBA(0,188,65,0.66);
+outline-offset: -1.5rem;
+margin: 10px auto;
+padding: 50px;
+background-color: RGBA(0,190,237,0.72);
+}
+h2{
+ font-weight: bold;
+}
+img{
+ float: right;
+ margin-left: 1rem;
+}
+header{
+ text-align: center;
+}
+nav ul li a{
+ 
+ color:RGBA(0,188,65,0.66);
+}
+
+
+li{
+ font-weight: bold;
+ list-style-type:none;
+ display: inline;
+ border-right: 2px solid purple;
+ padding-right: 3px;
+}
+li:last-of-type{
+ border-right:none;
+}
+
+footer{
+ text-align: center;
+}
