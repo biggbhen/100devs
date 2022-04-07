@@ -1,1 +1,17 @@
-//Get a dog photo from the dog.ceo api and place the photo in the DOM
+let dog = new Dog();
+let ui = new UI()
+
+const button = document.querySelector('#click')
+
+button.addEventListener('click', () =>{
+ dog.get('https://dog.ceo/api/breeds/image/random')
+ .then(data => {
+console.log(data);
+ui.showImage(data)
+ })
+ .catch(err => console.log(err))
+})
+
+
+
+
